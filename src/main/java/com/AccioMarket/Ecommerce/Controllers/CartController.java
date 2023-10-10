@@ -20,12 +20,12 @@ public class CartController {
     @PostMapping("/add")
     public String addToCart(@RequestBody OrderRequestDto orderRequestDto){
         String response = "";
-        System.out.println(orderRequestDto.toString() + ".............");
         try{
             response = cartService.addCart(orderRequestDto);
         } catch (Exception e) {
             return e.getMessage();
         }
+
 
         return response;
     }

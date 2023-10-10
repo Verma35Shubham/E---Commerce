@@ -18,6 +18,7 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+
     private int cartTotal;
 
     @OneToOne

@@ -40,7 +40,7 @@ public class CartServiceImpl implements CartService {
 
         Product product;
         try{
-            System.out.println(orderRequestDto.getProductId()+ ".............................");
+
             product = productRepository.findById(orderRequestDto.getProductId()).get();
         }
         catch (Exception e){

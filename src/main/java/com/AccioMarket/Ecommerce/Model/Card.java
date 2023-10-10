@@ -21,7 +21,6 @@ public class Card {
 
     @Column(unique = true)
     private String cardNo;
-
     private int cvv;
 
     @Enumerated(EnumType.STRING)

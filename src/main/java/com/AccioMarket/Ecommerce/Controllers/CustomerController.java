@@ -18,8 +18,10 @@ public class CustomerController {
 
     @PostMapping("/add")
     public String addCustomer(@RequestBody CustomerRequestDTO customerRequestDTO){
+
         return customerService.addCustomer(customerRequestDTO);
     }
+
 
     // get customer by id
 

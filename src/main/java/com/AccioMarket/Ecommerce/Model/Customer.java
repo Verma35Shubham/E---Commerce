@@ -30,6 +30,7 @@ public class Customer {
     @Column(unique = true)
     private String mobNo;
 
+
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     List<Card> cards = new ArrayList<>();
 
