@@ -26,6 +26,7 @@ public class Product {
 
     private int quantity;
 
+
     @Enumerated(EnumType.STRING)
     ProductCategory productCategory;
 

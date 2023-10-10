@@ -31,6 +31,8 @@ public class Ordered {
 
     private String cardUsedForPayment;
 
+
+
     @ManyToOne
     @JoinColumn
     Customer customer;
